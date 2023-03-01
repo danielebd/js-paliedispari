@@ -26,7 +26,8 @@ button.addEventListener("click", function () {
     //SCEGLI NUMERO
     const inputNumber = document.getElementById('input-number').valueAsNumber;
     if (inputNumber > 5) {
-        alert('error, scegli un numero da 1 a 5')
+        alert('error, scegli un numero da 1 a 5');
+        location.reload();
     }
     const numberPc = Math.floor(Math.random() * 5) + 1;
     
